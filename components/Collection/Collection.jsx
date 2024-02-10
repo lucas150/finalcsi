@@ -21,46 +21,18 @@ const Collection = () => {
       user: images.user1,
     },
     {
-      background: images.creatorbackground2,
-      user: images.user2,
-    },
-    {
-      background: images.creatorbackground3,
-      user: images.user3,
-    },
-    {
       background: images.creatorbackground4,
       user: images.user4,
-    },
-    {
-      background: images.creatorbackground5,
-      user: images.user5,
     },
     {
       background: images.creatorbackground6,
       user: images.user6,
     },
-    {
-      background: images.creatorbackground7,
-      user: images.user7,
-    },
-    {
-      background: images.creatorbackground8,
-      user: images.user8,
-    },
   ];
   const newsArray = [
     {
-      background: images.creatorbackground3,
-      user: images.user3,
-    },
-    {
       background: images.creatorbackground4,
       user: images.user4,
-    },
-    {
-      background: images.creatorbackground5,
-      user: images.user5,
     },
     {
       background: images.creatorbackground6,
@@ -69,10 +41,6 @@ const Collection = () => {
     {
       background: images.creatorbackground1,
       user: images.user1,
-    },
-    {
-      background: images.creatorbackground2,
-      user: images.user2,
     },
   ];
   const followingArray = [
@@ -80,10 +48,7 @@ const Collection = () => {
       background: images.creatorbackground1,
       user: images.user1,
     },
-    {
-      background: images.creatorbackground2,
-      user: images.user2,
-    },
+
     {
       background: images.creatorbackground3,
       user: images.user3,
@@ -92,10 +57,7 @@ const Collection = () => {
       background: images.creatorbackground4,
       user: images.user4,
     },
-    {
-      background: images.creatorbackground5,
-      user: images.user5,
-    },
+
     {
       background: images.creatorbackground6,
       user: images.user6,

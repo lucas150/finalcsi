@@ -26,13 +26,13 @@ const NavBar = () => {
   const openMenu = (e) => {
     const btnText = e.target.innerText;
     if (btnText == "Discover") {
-      setDiscover(true);
+      setDiscover((prevState) => !prevState);
       setHelp(false);
       setNotification(false);
       setProfile(false);
     } else if (btnText == "Help Center") {
       setDiscover(false);
-      setHelp(true);
+      setHelp((prevState) => !prevState);
       setNotification(false);
       setProfile(false);
     } else {
@@ -80,12 +80,15 @@ const NavBar = () => {
       <div className={Style.navbar_container}>
         <div className={Style.navbar_container_left}>
           <div className={Style.logo}>
-            <Image
-              src={images.logo}
-              alt="NFT MARKET PLACE"
-              width={100}
-              height={100}
-            />
+            <Link href="/">
+              <Image
+                src={images.logo}
+                alt="NFT MARKET PLACE"
+                width={100}
+                height={100}
+                link="home"
+              />
+            </Link>
           </div>
           <div className={Style.navbar_container_left_box_input}>
             <div className={Style.navbar_container_left_box_input_box}>
@@ -144,8 +147,8 @@ const NavBar = () => {
               <Image
                 src={images.user1}
                 alt="Profile"
-                width={40}
-                height={40}
+                width={100}
+                height={100}
                 onClick={() => openProfile()}
                 className={Style.navbar_container_right_profile}
               />

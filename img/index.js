@@ -1,13 +1,15 @@
 import collection from "./collection.png";
-import creatorbackground1 from "./creatorbackground-1.jpeg";
-import creatorbackground2 from "./creatorbackground-2.jpeg";
-import creatorbackground3 from "./creatorbackground-3.jpeg";
-import creatorbackground4 from "./creatorbackground-4.jpg";
-import creatorbackground5 from "./creatorbackground-5.jpg";
-import creatorbackground6 from "./creatorbackground-6.jpg";
-import creatorbackground7 from "./creatorbackground-7.jpg";
-import creatorbackground8 from "./creatorbackground-8.jpg";
+import creatorbackground1 from "./video1.gif";
+import creatorbackground2 from "./video3.gif";
+import creatorbackground3 from "./video2.gif";
+import creatorbackground4 from "./video4.gif";
+import creatorbackground5 from "./video5.gif";
+import creatorbackground6 from "./video6.webp";
+import creatorbackground7 from "./video7.gif";
+import creatorbackground8 from "./video8.gif";
 import creatorbackground9 from "./creatorbackground-9.jpg";
+import music2 from "./music2.jpg";
+
 import creatorbackground10 from "./creatorbackground-10.jpg";
 import creatorbackground11 from "./creatorbackground-11.jpg";
 import user1 from "./user-1.png";
@@ -25,7 +27,7 @@ import service2 from "./service-2.png";
 import service3 from "./service-3.png";
 import service4 from "./service-4.png";
 import logoLight from "./logo-light.svg";
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import facebook from "./facebook.svg";
 import twitter from "./twitter.svg";
 import telegram from "./telegram.svg";
@@ -39,6 +41,13 @@ import getAble from "./getable.png";
 import nft_image_1 from "./nft-image-1.png";
 import nft_image_2 from "./nft-image-2.png";
 import nft_image_3 from "./nft-image-3.png";
+import nft_image_4 from "./nft-image-4.png";
+import nft_image_5 from "./nft-image-5.png";
+import nft_image_6 from "./nft-image-6.png";
+import nft_image_7 from "./nft-image-7.png";
+import nft_image_8 from "./nft-image-8.png";
+import nft_image_9 from "./nft-image-9.jpg";
+
 import musiceWave from "./musicwave.png";
 import update from "./update.png";
 import earn from "./eran.png";
@@ -73,6 +82,14 @@ export default {
   nft_image_1,
   nft_image_2,
   nft_image_3,
+  nft_image_4,
+  nft_image_5,
+  nft_image_6,
+  nft_image_7,
+  nft_image_9,
+  nft_image_8,
+  music2,
+
   getAble,
   nft_1,
   hero,

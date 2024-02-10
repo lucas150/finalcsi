@@ -29,7 +29,7 @@ const Home = () => {
   return (
     <div className={Style.homePage}>
       <HeroSection />
-      <Service />
+      {/* <Service /> */}
       <BigNFTSilder />
       <Title
         heading="Audio Collection"
@@ -50,9 +50,8 @@ const Home = () => {
         paragraph="Explore the NFTs in the most featured categories."
       />
       <Category />
-      <Subscribe />
-      <Brand />
-      <Video />
+      {/* <Brand /> */}
+      {/* <Video /> */}
     </div>
   );
 };
