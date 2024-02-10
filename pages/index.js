@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useContext} from "react";
 
 //INTERNAL IMPORT
 import Style from "../styles/index.module.css";
@@ -19,7 +19,13 @@ import {
   Video,
 } from "../components/componentsindex";
 
+import { NFTMarketplaceContext } from "../Context/NFTMarketPlaceContext";
+
 const Home = () => {
+  const {  } = React.useContext(NFTMarketplaceContext);
+
+  
+
   return (
     <div className={Style.homePage}>
       <HeroSection />
