@@ -8,6 +8,8 @@ import creatorbackground6 from "./video6.webp";
 import creatorbackground7 from "./video7.gif";
 import creatorbackground8 from "./video8.gif";
 import creatorbackground9 from "./creatorbackground-9.jpg";
+import music2 from "./music2.jpg";
+
 import creatorbackground10 from "./creatorbackground-10.jpg";
 import creatorbackground11 from "./creatorbackground-11.jpg";
 import user1 from "./user-1.png";
@@ -86,6 +88,7 @@ export default {
   nft_image_7,
   nft_image_9,
   nft_image_8,
+  music2,
 
   getAble,
   nft_1,
