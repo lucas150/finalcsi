@@ -44,7 +44,6 @@ const Home = () => {
         paragraph="Explore the NFTs in the most featured categories."
       />
       <Category />
-      <Subscribe />
       <Brand />
       {/* <Video /> */}
     </div>

@@ -25,6 +25,7 @@
   padding: 1rem;
   transition: all 0.3s ease-in;
 }
+/* .notification_box: */
 
 .notification_box:hover {
   background-color: var(--icons-color);
