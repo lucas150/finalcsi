@@ -5,6 +5,12 @@
   z-index: 111111111;
 }
 
+.logo{
+  align-items:flex-end;
+  border-top: 1rem;
+  padding-top: 3vh;
+}
+
 .navbar_container {
   width: 80%;
   margin: 0 auto;
