@@ -49,7 +49,7 @@ export const NFTMarketplaceProvider = ({children}) => {
             const accounts = await window.ethereum.request({method: 'eth_accounts'});
 
             if (accounts.length) {
-                setCurrentAccount(accounts[0]);
+                setCurrentAccount(accounts[3]);
                 // console.log(accounts[0]);
             } else {
                 setError("No Account Found");

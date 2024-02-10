@@ -131,12 +131,12 @@ const NavBar = () => {
 
           {/* CREATE BUTTON SECTION */}
           <div className={Style.navbar_container_right_button}>
-            {currentAccount == "" ? (
+            {/* {currentAccount == "" ? (
               <Button btnName="Connect" handleClick={() => connectWallet()}/>
             ): (
-                <button
+                <Button />
               )
-            }
+            } */}
             <Button btnName="Create" handleClick={() => {}} />
           </div>
 
