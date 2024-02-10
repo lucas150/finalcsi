@@ -78,8 +78,8 @@ const NavBar = () => {
             <Image
               src={images.logo}
               alt="NFT MARKET PLACE"
-              width={100}
-              height={100}
+              width={200}
+              height={120}
             />
           </div>
           <div className={Style.navbar_container_left_box_input}>
@@ -133,8 +133,8 @@ const NavBar = () => {
               <Image
                 src={images.user1}
                 alt="Profile"
-                width={40}
-                height={40}
+                width={100}
+                height={100}
                 onClick={() => openProfile()}
                 className={Style.navbar_container_right_profile}
               />

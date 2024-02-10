@@ -8,12 +8,13 @@
 .navbar_container {
   width: 80%;
   margin: 0 auto;
-
+  font-size: 1.6rem;
+  font-weight: 600;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  /* gap: 0.5rem; */
 }
 
 .navbar_container_left {
@@ -23,8 +24,9 @@
 }
 
 .navbar_container_left_box_input_box {
-  width: 60%;
-  border: 1px solid var(--icons-color);
+  width: 80%;
+  height: 4rem;
+  border: 3px solid var(--icons-color);
   display: flex;
   align-items: center;
   padding: 0.5rem;
@@ -33,6 +35,7 @@
 
 .navbar_container_left_box_input_box input {
   width: 90%;
+  font-size: 1.5rem;
   border: none;
   outline: none;
   background-color: transparent;
@@ -40,7 +43,7 @@
 
 .search_icon {
   cursor: pointer;
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 
 /* //-------RIGHT */
@@ -76,10 +79,11 @@
 .navbar_container_right_notify {
   position: relative;
   cursor: pointer;
+  font-size: larger;
 }
 
 .notify {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .navbar_container_right_button {
