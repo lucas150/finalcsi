@@ -13,8 +13,6 @@ import { Button } from "../componentsindex";
 import images from "../../img";
 import { NFTMarketplaceContext } from "../../Context/NFTMarketPlaceContext";
 
-
-
 const NavBar = () => {
   //----USESTATE COMPONNTS
   const [discover, setDiscover] = useState(false);
@@ -73,7 +71,7 @@ const NavBar = () => {
     }
   };
 
-  const {currentAccount, connectWallet} = useContext(NFTMarketplaceContext);
+  const { currentAccount, connectWallet } = useContext(NFTMarketplaceContext);
 
   return (
     <div className={Style.navbar}>
@@ -131,13 +129,13 @@ const NavBar = () => {
 
           {/* CREATE BUTTON SECTION */}
           <div className={Style.navbar_container_right_button}>
-            {currentAccount == "" ? (
+            {/* {currentAccount == "" ? (
               <Button btnName="Connect" handleClick={() => connectWallet()}/>
             ): (
                 <button
               )
             }
-            <Button btnName="Create" handleClick={() => {}} />
+            <Button btnName="Create" handleClick={() => {}} /> */}
           </div>
 
           {/* USER PROFILE */}
