@@ -5,8 +5,8 @@
   z-index: 111111111;
 }
 
-.logo{
-  align-items:flex-end;
+.logo {
+  align-items: flex-end;
   border-top: 1rem;
   padding-top: 3vh;
   object-fit: contain;

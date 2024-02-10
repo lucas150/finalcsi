@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from "react";
+import React, { useContext, useEffect } from "react";
 import Image from "next/image";
 
 //INTERNAL IMPORT
@@ -6,7 +6,7 @@ import Style from "./HeroSection.module.css";
 import { Button } from "../componentsindex";
 import images from "../../img";
 
-import {NFTMarketplaceContext} from "../../Context/NFTMarketPlaceContext";
+import { NFTMarketplaceContext } from "../../Context/NFTMarketPlaceContext";
 
 const HeroSection = () => {
   const { title } = useContext(NFTMarketplaceContext);
@@ -17,8 +17,8 @@ const HeroSection = () => {
         <div className={Style.heroSection_box_left}>
           <h1>{title}🖼️</h1>
           <p>
-          Your Gateway to a Creative Cosmos. Discover the most outstanding NTFs in all topics of life. Creative
-            your NTFs and sell them
+            Your Gateway to a Creative Cosmos. Discover the most outstanding
+            NTFs in all topics of life. Creative your NTFs and sell them
           </p>
           <Button btnName="Start your search" />
         </div>
