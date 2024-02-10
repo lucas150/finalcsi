@@ -82,8 +82,8 @@ const NavBar = () => {
               <Image
                 src={images.logo}
                 alt="NFT MARKET PLACE"
-                width={200}
-                height={200}
+                width={150}
+                height={100}
                 link="home"
               />
             </Link>
@@ -129,13 +129,13 @@ const NavBar = () => {
 
           {/* CREATE BUTTON SECTION */}
           <div className={Style.navbar_container_right_button}>
-            {/* {currentAccount == "" ? (
-              <Button btnName="Connect" handleClick={() => connectWallet()}/>
-            ): (
-                <button
-              )
-            }
-            <Button btnName="Create" handleClick={() => {}} /> */}
+            {currentAccount == "" ? (
+              <Button btnName="Connect" handleClick={() => connectWallet()} />
+            ) : (
+              <link href={{ pathname: "/" }}>
+                <Button btnName="Create" />
+              </link>
+            )}
           </div>
 
           {/* USER PROFILE */}
