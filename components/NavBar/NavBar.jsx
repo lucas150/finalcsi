@@ -82,8 +82,8 @@ const NavBar = () => {
               <Image
                 src={images.logo}
                 alt="NFT MARKET PLACE"
-                width={100}
-                height={100}
+                width={200}
+                height={200}
                 link="home"
               />
             </Link>

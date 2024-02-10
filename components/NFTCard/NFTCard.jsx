@@ -13,7 +13,6 @@ const NFTCard = () => {
     images.nft_image_2,
     images.nft_image_3,
     images.nft_image_4,
-
     images.nft_image_5,
     images.nft_image_6,
     images.nft_image_7,
@@ -73,7 +72,7 @@ const NFTCard = () => {
           <div className={Style.NFTCard_box_update_details}>
             <div className={Style.NFTCard_box_update_details_price}>
               <div className={Style.NFTCard_box_update_details_price_box}>
-                <h4>Clone #17373</h4>
+                <h4>Nobody #2524</h4>
 
                 <div className={Style.NFTCard_box_update_details_price_box_box}>
                   <div

@@ -71,7 +71,7 @@ const AudioCard = () => {
 
         <div className={Style.audioCard_box_details}>
           <div className={Style.audioCard_box_details_info}>
-            <h4>NFT music #1123</h4>
+            <h4>Blocktones</h4>
             <div className={Style.audioCard_box_details_info_price}>
               <small>Price</small>
               <p>$3,221.33</p>
