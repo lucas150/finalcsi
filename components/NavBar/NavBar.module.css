@@ -9,6 +9,7 @@
   align-items:flex-end;
   border-top: 1rem;
   padding-top: 3vh;
+  object-fit: contain;
 }
 
 .navbar_container {

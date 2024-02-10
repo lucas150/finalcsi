@@ -22,7 +22,10 @@ import {
 import { NFTMarketplaceContext } from "../Context/NFTMarketPlaceContext";
 
 const Home = () => {
-  const {  } = React.useContext(NFTMarketplaceContext);
+  const { checkIfWalletIsConnected } = React.useContext(NFTMarketplaceContext);
+  useEffect(() => {
+    checkIfWalletIsConnected();
+  }, []);
 
   
 
