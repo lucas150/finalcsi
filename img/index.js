@@ -25,7 +25,7 @@ import service2 from "./service-2.png";
 import service3 from "./service-3.png";
 import service4 from "./service-4.png";
 import logoLight from "./logo-light.svg";
-import logo from "./logo.svg";
+import logo from "./logo.jpg";
 import facebook from "./facebook.svg";
 import twitter from "./twitter.svg";
 import telegram from "./telegram.svg";
@@ -45,9 +45,6 @@ import nft_image_6 from "./nft-image-6.png";
 import nft_image_7 from "./nft-image-7.png";
 import nft_image_8 from "./nft-image-8.png";
 import nft_image_9 from "./nft-image-9.jpg";
-
-
-
 
 import musiceWave from "./musicwave.png";
 import update from "./update.png";
@@ -89,7 +86,6 @@ export default {
   nft_image_7,
   nft_image_9,
   nft_image_8,
-
 
   getAble,
   nft_1,
