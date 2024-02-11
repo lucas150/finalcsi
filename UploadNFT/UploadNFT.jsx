@@ -4,6 +4,7 @@ import { FaPercent } from "react-icons/fa";
 import { AiTwotonePropertySafety } from "react-icons/ai";
 import { TiTick } from "react-icons/ti";
 import Image from "next/image";
+import { useRouter } from "next/router.js";
 
 //INTERNAL IMPORT
 import Style from "./Upload.module.css";
@@ -192,12 +193,39 @@ const UploadNFT = ({uploadToPinata, createNFT}) => {
               />
             </div>
           </div>
+
+          <div className={formStyle.Form_box_input}>
+            <label htmlFor="Price">Price</label>
+            <div className={formStyle.Form_box_input_box}>
+              <div className={formStyle.Form_box_input_box_icon}>
+                <AiTwotonePropertySafety />
+              </div>
+              <input
+                type="text"
+                placeholder="Price"
+                onChange={(e) => setPrice(e.target.value)}
+              />
+            </div>
+          </div>
         </div>
 
         <div className={Style.upload_box_btn}>
           <Button
             btnName="Upload"
-            handleClick={async() => createNFT(name, price, image, description, royalties, fileSize, category, properties)}
+            handleClick={async () =>
+              createNFT(
+                name,
+                price,
+                image,
+                description,
+                router
+                // website,
+                // royalties,
+                // fileSize,
+                // category,
+                // properties
+              )
+            }
             classStyle={Style.upload_box_btn_style}
           />
           <Button
