@@ -60,7 +60,7 @@ export const NFTMarketplaceProvider = ({ children }) => {
         setOpenError(true);
       }
 
-      console.log(currentAccount);
+      // console.log(currentAccount);
     } catch (error) {
       console.log(
         "Something went wrong while checking if wallet is connected. Please try again later."
