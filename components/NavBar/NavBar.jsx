@@ -132,9 +132,9 @@ const NavBar = () => {
             {currentAccount == "" ? (
               <Button btnName="Connect" handleClick={() => connectWallet()} />
             ) : (
-              <link href={{ pathname: "/" }}>
-                <Button btnName="Create" />
-              </link>
+              <a href="/uploadNFT">
+                <Button btnName="Create" handleClick={() => {}}/>
+              </a>
             )}
             {/* {currentAccount == "" ? (
               <Button btnName="Connect" handleClick={() => connectWallet()}/>
@@ -142,7 +142,7 @@ const NavBar = () => {
                 <Button />
               )
             } */}
-            <Button btnName="Create" handleClick={() => {}} />
+            {/* <Button btnName="Create" handleClick={() => {}} /> */}
           </div>
 
           {/* USER PROFILE */}

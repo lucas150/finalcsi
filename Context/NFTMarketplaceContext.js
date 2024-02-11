@@ -88,28 +88,56 @@ export const NFTMarketplaceProvider = ({ children }) => {
     }
   };
 
-  const uploadtoIPFS = async (file) => {
-    try {
-      const added = await client.add({ content: file });
-      const url = `https://ipfs.infura.io/ipfs/${added.path}`;
+  const uploadToPinata = async (file) => {
+    if(file){
+        try{
+            const formData = new FormData();
+            formData.append("file", file);
 
-      return url;
-    } catch (error) {
-      console.log("Error Uploading to IPFS");
+            const response = await axios({
+                method: "post",
+                url: "https://api.pinata.cloud/pinning/pinFileToIPFS",
+                data: formData,
+                headers:{
+                    pinata_api_key: `020cc455430e8d3978d9`,
+                    pinata_secret_api_key:`49fa357c356bc6e50b09a7fc7f7fe28ba412806509993e03ebef1d13ddfb2c9c`,
+                    "Content-Type": "multipart/form-data",
+                },
+            });
+            console.log(response);
+            const ImgHash = `https://gateway.pinata.cloud/ipfs/${response.data.IpfsHash}`;
+
+            return ImgHash;
+        }
+        catch(error){
+            console.log("Error while uploading to pinata");
+        }
     }
-  };
+    };
 
-  const createNFT = async (formInput, fileUrl, rourter) => {
-    const { name, description, price } = formInput;
+  const createNFT = async (name, price, image, description, router) => {
+    // const { name, description, price } = formInput;
 
-    if (!name || !description || !price || !fileUrl) {
+    if (!name || !description || !price || !image) {
       return console.log("Data is missing ");
     }
+
     const data = JSON.stringify({ name, description, image: fileUrl });
 
     try {
-      const added = await client.add(data);
-      const url = `http://ipfs.infura.io/ipfs/${added.path}`;
+      const response = await axios({
+        method: "post",
+        url: "https://api.pinata.cloud/pinning/pinJSONToIPFS",
+        data: data,
+        headers:{
+            pinata_api_key: `9d03a2850c7a2c190538`,
+            pinata_secret_api_key:`19df2cf3af00256fc86448cee4cd5796e58acb0dcd62ba86090c28aaad4efba5`,
+            "Content-Type": "multipart/form-data",
+        },
+        
+      })
+    //   const added = await client.add(data);
+      const url = `http://gateway.pinata.cloud/ipfs${response.data.IpfsHash}`;
 
       await createSale(url, price);
     } catch (error) {
@@ -237,7 +265,7 @@ export const NFTMarketplaceProvider = ({ children }) => {
       value={{
         checkIfWalletIsConnected,
         connectWallet,
-        uploadtoIPFS,
+        uploadToPinata,
         createNFT,
         fetchNFTs,
         fetchMyNFTsOrListedNFTs,
